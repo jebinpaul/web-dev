@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DAY 3</title>
+    <link href="day3.css" rel="stylesheet"  type="text/css">
+</head>
+<body>
+    <h1>personal info</h1>
+
+    <div id="output"></div>
+
+    <script>
+        let names = ['jebin', 'paul'];
+        let dateOfBirth = 2003;
+        let currentYear = 2024;
+        let age = currentYear - dateOfBirth;
+        let marriedStatus = false;
+        let children = true;
+
+        let result = names[0] + ' is ' + age + ' years old';
+
+        if (marriedStatus) {
+            result += ' and ' + names[0] + ' is married';
+        } else if (children) {
+            result += ' and ' + names[0] + ' has a child';
+        } else {
+            result += ' and ' + names[0] + ' is not married';
+        }
+
+        document.getElementById("output").innerText = result;
+    </script>
+</body>
+</html>
